@@ -1,5 +1,81 @@
+
+@meia(min-width:468px){
+	.Qualifications{
+		display: flex;
+		justify-content: flex-start;	
+	}
+}
+
 body{
-	background:black;
-	color:white;
-	font-family:helvetica;
-	text-align:center;
+	font-family: ariel;
+}
+
+.heading{
+	text-shadow: 1px 1px;
+	text-align: center;
+}
+
+.BoldUnderline{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.ul-circle{
+	list-style-type: circle;
+}
+
+.ul-square {
+  list-style-type: square;
+}
+
+#EHistory{
+	
+}
+
+
+.Qualifications div, .Employment div{
+	border: 1px #ccc solid;
+	padding: 10px;
+}	
+
+.Qualifications{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.Year{
+	flex: 1;
+	order: 1;
+}
+
+.Course{
+	flex: 3;
+	order: 2;
+}
+
+.Provider{
+	flex: 1;
+	order: 3;
+}
+
+.Employment{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.ICT-1{
+	flex: 1;
+	order: 1;
+}
+
+.ICT-2{
+	flex: 1;
+	order: 2;
+}
+
+.ICT-3{
+	flex: 1;
+	order: 3;
