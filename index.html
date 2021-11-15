@@ -1,19 +1,5 @@
 <!DOCTYPE html>
 <!--
-	Week 2 Lesson - Code Challenge:
-	Take the CV site you created last week and do the following:
-	Use ID's and Classes to re-style your website. You will need to go to W3 Schools to find out how to do the following:
-	-Add text shadow to your headings
-	-Underline and bold key words in your CV. You can use a <span> tag to target a specific word in a <p> tag or similar.
-	-Change the style of one of the lists on your page so that the bullet points appear differently
-	-Use HTML to create a link that when clicked jumps between headings on the page (you will need enough content on the page so that the user would need to scroll)
-	
-	Week 3 Lab: 
-	Update your CV from the last week to be a FlexBox responsive design. Design is mostly up to you but for full marks your design should:
-	- Have 3 columns at some point in the design
-	- Use Justified Content
-	- Use a media query to change some aspect of your design at smaller widths
-	
 	Week 6 Lab:
 	Take a copy of your existing CV site and modify it to use Bootstrap as its grid system. 
 	You may also use any of the Bootstrap components that you like, but you will be graded on your responsive design using Bootstrap. 
@@ -24,110 +10,103 @@
 
 	<head>
 		<title>My CV</title>
-		<link rel="stylesheet" href="style.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="mybootstrap.css"/>
 	</head>
 	
 	<body>
-		
-		<h1 class="heading">Karen O'Callaghan</h1>
+		<div class="container-fluid">
+			<h1 class="heading">Karen O'Callaghan</h1>
 			
-			<p> 
-			<span class="BoldUnderline"> Address:</span> 8 Common’s East, Drynam Road, Swords, Co. Dublin
-			<span class="BoldUnderline"> Mobile:</span> 086 1630284
-			<span class="BoldUnderline"> Email:</span> karen.ann.ocallaghan@gmail.com	
-			</p>
+				<p> 
+				<span class="BoldUnderline"> Address:</span> 8 Common’s East, Drynam Road, Swords, Co. Dublin
+				<span class="BoldUnderline"> Mobile:</span> 086 1630284
+				<span class="BoldUnderline"> Email:</span> karen.ann.ocallaghan@gmail.com	
+				</p>
+				
+			<div class="row">
+				<div class="col-12 text-center text-uppercase p-3 mb-2 bg-secondary text-white">
+					 <h2> Key Skills & Experience</h2> 			 
+				</div>
+				<div class="col">
+					<ul class="ul-square">
+						<li>I am currently responsible for the implementation of concurrent operational projects, for example, Data Classification, Security Operations, ICT Security Awareness Training and the provision of ICT services to the Department’s network of Honorary Consul’s worldwide.</li>
+						<li>Under the ICT Strategic Plan, I am responsible for implementing an adaptive protection process that integrates identification, prevention, detection, response and recovery capabilities to cyber security threats/incidents in line with industry standards.</li>
+						<li>Under the ICT Strategic Plan, I am responsible for implementing an adaptive protection process that integrates identification, prevention, detection, response and recovery capabilities to cyber security threats/incidents in line with industry standards.</li>
+						<li>I am familiar with governance frameworks in Public Service environments. I am currently responsible for developing and implementing an ICT Governance and Control Framework, under the ICT Strategy Action Plan, which includes defining formal practices in relation to Security Policy, Financial Expenditure, Operations, Projects, Change Control, Strategy and Resources</li>
+						<li>I have experience supporting customers, resolving issues and ability to analyse individual problems, identify both temporary fixes and permanent solutions and make decisions for necessary action </li>
+						<li>I am driven to deliver user centric systems and services and to improve the standard of service provided to all customers in line with industry standards and best practice</li>
+					</ul>
+				</div>
+			</div>
 		
-		<h2 class="heading">Key Skills & Experience</h2>
+			<div class="row">
+				<div class="col-12 text-center text-uppercase p-3 mb-2 bg-secondary text-white">
+					 <h2> Qualifications & Education</h2>
+				</div>
+			</div>
 			
-			<ul class="ul-square">
-				<li>I am currently responsible for the implementation of concurrent operational projects, for example, Data Classification, Security Operations, ICT Security Awareness Training and the provision of ICT services to the Department’s network of Honorary Consul’s worldwide.</li>
-				<li>Under the ICT Strategic Plan, I am responsible for implementing an adaptive protection process that integrates identification, prevention, detection, response and recovery capabilities to cyber security threats/incidents in line with industry standards.</li>
-				<li>Under the ICT Strategic Plan, I am responsible for implementing an adaptive protection process that integrates identification, prevention, detection, response and recovery capabilities to cyber security threats/incidents in line with industry standards.</li>
-				<li>I am familiar with governance frameworks in Public Service environments. I am currently responsible for developing and implementing an ICT Governance and Control Framework, under the ICT Strategy Action Plan, which includes defining formal practices in relation to Security Policy, Financial Expenditure, Operations, Projects, Change Control, Strategy and Resources</li>
-				<li>I have experience supporting customers, resolving issues and ability to analyse individual problems, identify both temporary fixes and permanent solutions and make decisions for necessary action </li>
-				<li>I am driven to deliver user centric systems and services and to improve the standard of service provided to all customers in line with industry standards and best practice</li>
-			</ul>
-		
-		
-		<h2 class="heading"> Qualifications / Education</h2>
-			
-		<div class="Qualifications">
-			
-			<div class="Year">
-					<h3> <span class="BoldUnderline"> Year </span> </h3>
+			<div class="row p-3 mb-2 bg-light text-dark">
+				<div class="col text-center">
+				  <h3 class="heading"> Year </h3>
 					<p> 2019 </p>
 					<p> 2018 </p>
 					<p> 2018 </p>
-					
-			</div>
-		
-			<div class="Course">
-					<h3> Course </h3>
-					<p> Certificate in Business Analysis </p>
-					<p> PRINCE2® Practitioner in Project Management </p>
+				</div>
+				<div class="col text-center">
+				  <h3 class="heading"> Course </h3>
+					<p> Certificate in Business Analysis</p>
+					<p> PRINCE2® Practitioner in Project Management</p>
 					<p> PRINCE2® Foundation in Project Management </p>
-			</div>
-		
-			<div class="Provider">
-					<h3> Provider </h3>
+				</div>
+				<div class="col text-center">
+				  <h3 class="heading"> Provider </h3>
 					<p> NCI </p>
 					<p> IPA </p>
 					<p> IPA </p>
+				</div>
 			</div>
-		
+			
+			<div class="row">
+				<div class="col-12 text-center text-uppercase p-3 mb-2 bg-secondary text-white">
+					 <h2> Employment</h2>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title"> ICT Information Security Manager</h5>
+						<h6 class="card-subtitle mb-2 text-muted"> Department of Foreign Affairs, 76-78 Harcourt Street, Dublin 2, Ireland </h6>
+						<p class="card-text"> Nov 2018 - Nov 2021</p>
+						<a href="Roles/Role1.html" class="card-link">Role Description </a>
+					</div>
+				 </div>
+				 
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title"> ICT Systems Architect</h5>
+						<h6 class="card-subtitle mb-2 text-muted"> Houses of the Oireachtas Service, 91-93 Merrion Square, Dublin 2, Ireland </h6>
+						<p class="card-text"> Jul 2016 – Nov 2018</p>
+						<a href="Roles/Role2.html" class="card-link">Role Description </a>
+					</div>
+				 </div>
+				 
+				<div class="card" style="width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title"> ICT Service Desk Engineer</h5>
+						<h6 class="card-subtitle mb-2 text-muted"> Houses of the Oireachtas Service, 91-93 Merrion Square, Dublin 2, Ireland  </h6>
+						<p class="card-text"> Aug 2010- Jul 2016</p>
+						<a href="Roles/Role3.html" class="card-link">Role Description </a>
+					</div>
+				 </div>
+				 
+			</div>
+										
+			
 		</div>
-		
-		<h2 id="EHistory" class="heading">Employment History</h2>
-		
-		<div class="Employment">
-				
-			<div class="ICT-1">
-				<h3> ICT Information Security Manager: Nov 2018 – Jul 2021 </h3>
-				<p> Department of Foreign Affairs, 76-78 Harcourt Street, Dublin 2, Ireland </p>
-				<h4> Role: </h4>
-				<ul>
-					<li>Provide ongoing security recommendations, guidance and advice to the Department in the area of Information Security.</li>
-					<li>Development of new and review of existing ICT Security Policies against ICT Security Principles.</li>
-					<li>Procurement of ICT Security software and appliances.</li>
-					<li>Development and delivery of ICT Security Awareness Training.</li>
-					<li>Review new and existing ICT projects to ensure Security, Data Protection and policy compliance.</li>
-					<li>Management and compliance of security requirements for EU Systems. </li>
-					<li>Implementing systems for the maintenance of Data Security.</li>
-					<li>Managing the Department's secure communications centre (ComCen) and Security Operations.</li>
-				</ul>
-			</div>
-		
-			<div class="ICT-2">
-					<h3> ICT Systems Architect: Jul 2016 – Nov 2018  </h3>
-					<p> Houses of the Oireachtas Service, 91-93 Merrion Square, Dublin 2, Ireland </p>
-					<h4> Role: </h4>
-					<ul class="ul-circle">
-						<li>Project Manager on Business Process Mapping and Business Process Improvement Project (creating, updating & maintaining project plans, producing plan metrics, ensuring value for money and producing business cases for development and project closure reports).</li>
-						<li>Production of BPMN maps.</li>
-						<li>Production of wire frames of the proposed new system design based on business cases agreed.</li>
-						<li>Project Manager on Procedural System Development Project (managing the development and delivery of products, managing business unit feedback, overseeing system test and business process testing, updating & maintaining project plans, producing plan metrics).</li>
-						<li>Production of Business Requirements Specifications and Function Design Specifications.</li>
-						<li>Participating on and presenting to Steering Groups and Project Boards.</li>
-					</ul>
-			</div>
-		
-			<div class="ICT-3">
-					<h3>ICT Service Desk Engineer: Aug 2010- Jul 2016 </h3>
-					<p> Houses of the Oireachtas Service, Kildare House, Kildare Street, Dublin 2 </p>
-					<h4> Role: </h4>
-					<ul class="ul.circle">
-						<li>Helpdesk duties; provide efficient and effective cover when scheduled and prioritise calls to ensure all are logged and cleared.</li>
-						<li>Assets: provision and management of assets for staff and Members; Liaise with Contractor’s to ensure equipment is properly disposed of and service tags are cross checked with records when roll-outs are implemented.</li>
-						<li>Remote Access and USB requests from Member’s and Staff.</li>
-						<li>Constituency Office; Ensuring Members applications are logged and actively liaise with suppliers to ensure broadband is installed in the Constituency offices and contractors keep within the SLA timeframe;  Dealing with Members queries regarding, for e.g., ISDN refunds, entitlements.</li>
-						<li>Telecoms; processing invoices in a timely manner as not to incur prompt payments;  Liaising with suppliers regarding setting up new accounts, ordering stock and telecoms queries.</li>
-						<li>Electoral Register’s; ensuring receipt & provision to Members with LGCSB timeframes.</li>
-					</ul>
-			</div>
-		
-		</div>
-		<h3>Previous Positions</h3>
-		
+					
 	</body>	
 	
 </html>
